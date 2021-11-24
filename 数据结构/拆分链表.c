@@ -8,7 +8,7 @@ void decompose(Linklist La, Linklist &Lb, Linklist &Lc){
     while(p){
         La = p->next;
         if(p->data > 0){
-            p->next Lc->next;
+            p->next = Lc->next;
             Lc->next = p;
         }else{
             p->next = Lb->next;

@@ -15,6 +15,7 @@ Status InitStack(SqStack &S){
 }//InitStack
 
 Status Push(SqStack &S, int i, SElemType e){
+    //
     if(S.top_two < S.top_one){
         return OVERFLOW;//栈满，不考虑追加空间
     }
